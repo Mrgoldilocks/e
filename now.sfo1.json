@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "name": "serverless-geo-proxy-sfo1",
+  "alias": "serverless-geo-proxy-sfo1",
+  "builds": [{ "src": "proxy.js", "use": "@now/node" }],
+  "regions": ["sfo1"],
+  "routes": [{ "src": "/.*", "dest": "/proxy.js" }]
+}

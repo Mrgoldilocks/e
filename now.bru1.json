@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "name": "serverless-geo-proxy-bru1",
+  "alias": "serverless-geo-proxy-bru1",
+  "builds": [{ "src": "proxy.js", "use": "@now/node" }],
+  "regions": ["bru1"],
+  "routes": [{ "src": "/.*", "dest": "/proxy.js" }]
+}
